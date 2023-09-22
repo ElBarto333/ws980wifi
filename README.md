@@ -28,34 +28,35 @@ sensor:
 ```
 |Parameter            |Description                           |Requiered     |Type           |Default           |
 |---------------------|--------------------------------------|--------------|---------------|------------------|
-|name                 |The name of the device                |false         |string         |                  |
-|host                 |IP address of your weather station    |true          |string         |                  |
-|port                 |Port of your weather station          |false         |string         |45000             |
-|monitored_conditions |Conditions to display in the frontend |false         |list           |inside_temperature|
+|name                 |The name of the device                |`false`       |`string`         |                  |
+|host                 |IP address of your weather station    |`true`        |`string`         |                  |
+|port                 |Port of your weather station          |`false`       |`string`         |45000             |
+|unique_id            |Vendors Product ID                    |`false`       |`string`         |                  |
+|monitored_conditions |Conditions to display in the frontend |`false`       |`list`           |inside_temperature|
 
 |Keys for monitored_conditions |Unit |Description                                                               |
 |------------------------------|-----|--------------------------------------------------------------------------|
-|inside_temperature   |°C       |The current inside temperature measured by your control panel       |
-|outside_temperature  |°C       |The current outside temperature measured by your weather station   |
-|dew_point            |°C       |Dew point in °C
-|apparent_temperature |°C       |Apparent temperature in °C
-|heat_index           |°C       |Heat index in °C
-|inside_humidity      |%        |The current inside humidity measured by your control panel
-|outside_humidity     |%        |The current outside humidity measured by your weather station
-|pressure_absolute    |hPa      |The current absolute air pressure
-|pressure_relative    |hPa      |The current relative air pressure
-|wind_direction       |°        |Where the wind is coming from in degrees, with true north at 0° and progressing clockwise
-|wind_speed           |km/h     |The wind speed (usually measured over the period of 2 minutes)
-|gust                 |km/h     |The wind gust (usually measured over the period of less than 20 seconds)
-|rain                 |mm       |Current rain
-|rain_day             |mm       |Total rain of the current day
-|rain_week            |mm       |Total rain of the current week
-|rain_month           |mm       |Total rain of the current month
-|rain_year            |mm       |Total rain of the current year
-|rain_total           |mm       |Total rain of all time
-|light                |lx       |The current Illuminance level
-|uv_value             |uW/m²    |The current UV value
-|uv_index             |UV Index |The current UV index
+|inside_temperature   |`°C`       |The current inside temperature measured by your control panel       |
+|outside_temperature  |`°C`       |The current outside temperature measured by your weather station   |
+|dew_point            |`°C`       |Dew point in °C
+|apparent_temperature |`°C`       |Apparent temperature in °C
+|heat_index           |`°C`       |Heat index in °C
+|inside_humidity      |`%`        |The current inside humidity measured by your control panel
+|outside_humidity     |`%`        |The current outside humidity measured by your weather station
+|pressure_absolute    |`hPa`      |The current absolute air pressure
+|pressure_relative    |`hPa`      |The current relative air pressure
+|wind_direction       |`°`        |Where the wind is coming from in degrees, with true north at 0° and progressing clockwise
+|wind_speed           |`km/h`     |The wind speed (usually measured over the period of 2 minutes)
+|gust                 |`km/h`     |The wind gust (usually measured over the period of less than 20 seconds)
+|rain                 |`mm`       |Current rain
+|rain_day             |`mm`       |Total rain of the current day
+|rain_week            |`mm`       |Total rain of the current week
+|rain_month           |`mm`       |Total rain of the current month
+|rain_year            |`mm`       |Total rain of the current year
+|rain_total           |`mm`       |Total rain of all time
+|light                |`lx`       |The current Illuminance level
+|uv_value             |`uW/m²`    |The current UV value
+|uv_index             |`UV Index `|The current UV index
 
 
 A full configuration example can be found below:
